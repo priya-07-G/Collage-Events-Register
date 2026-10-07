@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | College Event Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">CollegeEvents</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html" class="active">Register</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Event Registration</h1>
+    <form id="registerForm" class="form-box" novalidate>
+      <label for="name">Full name</label>
+      <input type="text" id="name" placeholder="Your full name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com">
+
+      <label for="phone">Phone (10 digits)</label>
+      <input type="tel" id="phone" placeholder="9876543210" maxlength="10">
+
+      <label for="department">Department</label>
+      <select id="department">
+        <option value="">Select department</option>
+        <option>Cyber Security</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Electronics</option>
+        <option>Mechanical</option>
+        <option>Civil</option>
+      </select>
+
+      <label for="eventSelect">Event</label>
+      <select id="eventSelect"></select>
+
+      <button type="submit">Register</button>
+      <p id="formMsg"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 College Event Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

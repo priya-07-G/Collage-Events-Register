@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | College Event Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">CollegeEvents</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="register.html">Register</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Upcoming Events</h1>
+    <div class="filters">
+      <button class="filter-btn active" data-category="All">All</button>
+      <button class="filter-btn" data-category="Technical">Technical</button>
+      <button class="filter-btn" data-category="Cultural">Cultural</button>
+      <button class="filter-btn" data-category="Sports">Sports</button>
+    </div>
+    <div id="eventList" class="event-grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 College Event Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
